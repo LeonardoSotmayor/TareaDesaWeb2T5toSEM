@@ -1,0 +1,19 @@
+/* style.css - Ajustes adicionales de diseño fino */
+
+/* Transición suave para la imagen de perfil */
+.profile-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(52, 152, 219, 0.3);
+}
+
+/* Efecto hover interactivo para las tarjetas de hobbies */
+.dynamic-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dynamic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
