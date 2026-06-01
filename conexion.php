@@ -1,16 +1,13 @@
 <?php
-$host = 'localhost';
-$dbname = 'portafolio_db';
-$username = 'root';
-$password = ''; // Por defecto en XAMPP va vacío
+// Datos de InfinityFree
+$host = 'sql302.infinityfree.com'; // El servidor que aparece en tu imagen
+$dbname = 'if0_42065059_portafolio'; // Tu base de datos
+$username = 'if0_42065059'; // Tu usuario 
+$password = '3P4y9hF3VFBt5PG'; // Contraseña de InfinityFree
 
 try {
-    // Conexión estándar (por defecto se conecta al puerto 3306 automáticamente)
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-    
-    // Habilitar excepciones para capturar errores de manera eficiente
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
 } catch (PDOException $e) {
     die("Error crítico de conexión: " . $e->getMessage());
 }
